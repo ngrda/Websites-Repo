@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Linden Street Coffeehouse & Cafe — Lamoni, IA</title>
+<meta name="description" content="Coffeehouse and cafe in Lamoni, Iowa. Coffee, frappes, breakfast, lunch paninis, seasonal drinks, and merch. Order online for pickup.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="preloader" id="preloader" aria-hidden="true">
+  <div class="preloader-mark">
+    <svg width="48" height="48" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M4 10h15v6a5 5 0 0 1-5 5H9a5 5 0 0 1-5-5v-6Z" stroke="#2E2016" stroke-width="1.6"/>
+      <path d="M19 12h1.5a2.5 2.5 0 0 1 0 5H19" stroke="#2E2016" stroke-width="1.6"/>
+      <path d="M8 7c0-1 1-1 1-2s-1-1-1-2M12.5 7c0-1 1-1 1-2s-1-1-1-2" stroke="#2E2016" stroke-width="1.3" stroke-linecap="round"/>
+    </svg>
+    <span class="preloader-name">Linden Street Coffeehouse &amp; Cafe</span>
+  </div>
+</div>
+
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<header class="site-nav">
+  <div class="nav-inner">
+    <a href="#home" class="brandmark">
+      <img src="images/logo.png" alt="Linden Street Coffeehouse logo" class="brandmark-logo">
+      Linden Street Coffeehouse &amp; Cafe
+    </a>
+    <button class="nav-toggle" id="navToggle" aria-label="Toggle menu"><span></span></button>
+    <nav class="links" id="navLinks">
+      <a href="#menu">Menu</a>
+      <a href="#merch">Merch</a>
+      <a href="#visit">Visit</a>
+      <a href="https://order.tbdine.com/pickup/51395" class="nav-order-btn">Order Online</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <video class="hero-bg" id="heroBg" autoplay muted loop playsinline src="images/coffee.mp4"></video>
+  <div class="hero-overlay"></div> 
+  <div class="wrap hero-inner"> 
+    <span class="eyebrow-tag">Lamoni, Iowa · Est. on Linden Street</span>
+    <h1>Stop for the coffee.<br>Stay for the food.</h1>
+    <div class="hero-cta">
+      <a href="https://order.tbdine.com/pickup/51395" class="btn btn-primary">Order Online</a>
+      <a href="#menu" class="btn btn-ghost">See the Menu</a>
+    </div>
+    <div class="hero-meta">
+      <div><strong>Hours</strong>Mon–Sat 7am–4pm · Wed supper 5–7pm</div>
+      <div><strong>Call ahead</strong>641-784-4700</div>
+      <div><strong>Find us</strong>104 S Linden St, Lamoni, IA</div>
+    </div>
+  </div>
+</section>
+
+<div class="order-strip">
+  <div class="wrap order-inner reveal">
+    <div>
+      <h2>Flavors of the Season</h2>
+      <p>Coffees and cozy eats meant for right now. Taste the season before it slips away.</p>
+    </div>
+    <a href="#menu" data-open-tab="seasonal" class="btn btn-primary">See All Seasonal Items →</a>
+  </div>
+</div>
+
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
+  </div>
+  <div class="marquee-track" aria-hidden="true">
+    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
+    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
+  </div>
+</div>
+
+
+<div class="menu-header" id="menu">
+  <div class="tabbar">
+    <button class="active" data-tab="breakfast">BREAKFAST & DRINKS</button>
+    <button data-tab="coffee">COFFEE</button>
+    <button data-tab="smoothies">MILKSHAKES, SMOOTHIES & FRAPPE</button>
+    <button data-tab="lunch">LUNCH</button>
+    <button data-tab="seasonal">SEASONAL</button>
+  </div>
+</div>
+
+    <!-- BREAKFAST & DRINKS -->
+    <div class="menu-panel active" id="panel-breakfast">
+      <div class="menu-columns">
+        <div class="menu-group reveal">
+          <h3>Breakfast · 7am–2:30pm</h3>
+          <div class="menu-item"><div class="name">Quiche</div><div class="price">$10.80</div></div>
+          <div class="menu-item"><div class="name">Sausage Egg Cheese Muffin</div><div class="price">$5.70</div></div>
+          <div class="menu-item"><div class="name">Toasted Bagel</div><div class="price">$5.35</div></div>
+          <div class="menu-item"><div class="name">Yogurt Parfait</div><div class="price">$5.35</div></div>
+          <hr color="#D9A62E">
+          <div class="menu-item"><div class="name">Breakfast Egg Wrap<div class="desc">Meat or veggie loaded, chipotle mayo or salsa</div></div><div class="price">$5.70</div></div>
+          <div class="menu-item"><div class="name">Biscuits &amp; Gravy<div class="desc">Half order or whole order</div></div><div class="price">$5.56 / $7.70</div></div>
+          <br>
+          <span class="subnote">Available daily, 7–10:30am</span>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Iced Tea, Soda &amp; Juice</h3>
+          <span class="subnote">16oz unless noted</span>
+          <div class="menu-item"><div class="name">Soda Can, 12oz</div><div class="price">$1.17</div></div>
+          <div class="menu-item"><div class="name">Apple Juice</div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Blackberry Sage Iced Tea<div class="desc">Blackberry-sage black iced tea</div></div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Chocolate Milk</div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Happy Hibiscus Iced Tea<div class="desc">Hibiscus herbal iced tea</div></div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Lemonade<div class="desc">Lemonade concentrate, water, ice</div></div><div class="price">$3.74</div></div>
+          <div class="menu-item"><div class="name">Orange Juice</div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Pineapple Juice</div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Regular Milk</div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Southern Sweet Iced Tea<div class="desc">Sweetened black iced tea</div></div><div class="price">$1.87</div></div>
+          <div class="menu-item"><div class="name">Unsweetened Iced Tea</div><div class="price">$1.87</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- COFFEE -->
+    <div class="menu-panel" id="panel-coffee">
+      <div class="menu-columns">
+        <div class="menu-group reveal">
+          <h3>Hot Coffees</h3>
+          <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
+          <div class="menu-item"><div class="name">Latte</div><div class="price">$3.60</div></div>
+          <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.44</div></div>
+          <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, steamed milk</div></div><div class="price">$4.21</div></div>
+          <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, steamed milk, whipped cream</div></div><div class="price">$4.44</div></div>
+          <div class="menu-item"><div class="name">Dark Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">White Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">Nutty / Salty Professor, 16oz<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">Espresso Shots</div><div class="price">$2.80</div></div>
+          <div class="menu-item"><div class="name">Drip Coffee</div><div class="price">$2.10</div></div>
+          <div class="menu-item"><div class="name">Caramel Cider<div class="desc">Apple cider, steamed with caramel and cinnamon, whipped cream</div></div><div class="price">$4.44</div></div>
+          <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, steamed with milk</div></div><div class="price">$4.44</div></div>
+          <div class="menu-item"><div class="name">London Fog<div class="desc">Earl Grey tea, French vanilla, steamed milk</div></div><div class="price">$4.21</div></div>
+          <div class="menu-item"><div class="name">Hot Chocolate<div class="desc">Ghirardelli dark chocolate, steamed milk, whipped cream</div></div><div class="price">$3.74</div></div>
+          <div class="menu-item"><div class="name">Steamer<div class="desc">Steamed milk with your choice of flavor</div></div><div class="price">$3.74</div></div>
+          <div class="menu-item"><div class="name">Hot Tea<div class="desc">Flavor selected at pickup</div></div><div class="price">$1.87</div></div>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Iced Coffees</h3>
+          <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
+          <div class="menu-item"><div class="name">Latte</div><div class="price">$4.07</div></div>
+          <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.91</div></div>
+          <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, milk, ice</div></div><div class="price">$4.67</div></div>
+          <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, milk, ice</div></div><div class="price">$4.91</div></div>
+          <div class="menu-item"><div class="name">Dark Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">White Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">Nutty / Salty Professor<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
+          <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, milk, ice</div></div><div class="price">$4.91</div></div>
+          <div class="menu-item"><div class="name">Cold Brew Coffee<div class="desc">House blend, choose to add flavors or cold foam</div></div><div class="price">$3.74</div></div>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Coffee Smoothies, 16oz</h3>
+          <span class="subnote">Espresso-based blended drinks</span>
+          <div class="menu-item"><div class="name">Café Caramel Smoothie<div class="desc">Vanilla ice cream, espresso, caramel sauce, caramel syrup</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Café Chocolate Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Dark Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">White Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Chillin' Professor<div class="desc">Vanilla ice cream, espresso, hazelnut, caramel sauce</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">White Chocolate Peppermint Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, peppermint</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Peanut Butter Cup Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, peanut butter</div></div><div class="price">$5.84</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MILKSHAKES, SMOOTHIES & FRAPPE -->
+    <div class="menu-panel" id="panel-smoothies">
+      <div class="menu-columns">
+        <div class="menu-group reveal">
+          <h3>Milkshakes &amp; Smoothies, 16oz</h3>
+          <span class="subnote">No coffee — fruit &amp; cream based</span>
+          <div class="menu-item"><div class="name">Milkshake<div class="desc">Vanilla ice cream, your choice of flavor</div></div><div class="price">$5.37</div></div>
+          <div class="menu-item"><div class="name">Berry Blue Smoothie<div class="desc">Blueberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Strawberry Banana Smoothie<div class="desc">Strawberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Fruit Smoothie<div class="desc">Orange juice, pineapple juice, strawberry, banana, honey, ice</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Hawaiian Smoothie<div class="desc">Vanilla ice cream, pineapple juice, coconut</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Dreamsicle Shake<div class="desc">Vanilla ice cream, orange juice, Ghirardelli white chocolate</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Frozen Chai<div class="desc">Vanilla ice cream, house-made chai</div></div><div class="price">$5.84</div></div>
+          <div class="menu-item"><div class="name">Whipped Lemonade<div class="desc">Lemonade concentrate blended with ice and half &amp; half, topped with whipped cream — choose a syrup</div></div><div class="price">$5.14</div></div>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Frappes, 16oz</h3>
+          <div class="menu-item"><div class="name">Coconut Crème</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Caramel Extreme</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Cookies &amp; Cream</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Double Fudge Mocha</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Java Chip</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Matcha Green Tea</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Pistachio</div><div class="price">$5.38</div></div>
+          <div class="menu-item"><div class="name">Red Velvet</div><div class="price">$5.38</div></div>
+          <br>
+          <span class="subnote">Add-ons</span>
+          <div class="menu-item"><div class="name">Extra Espresso</div><div class="price">$0.79</div></div>
+          <div class="menu-item"><div class="name">Oat Milk Sub</div><div class="price">$0.93</div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- LUNCH -->
+    <div class="menu-panel" id="panel-lunch">
+      <div class="menu-columns">
+        <div class="menu-group reveal">
+          <h3>Sandwiches</h3>
+          <span class="subnote">Choose a side with your entree</span>
+          <div class="menu-item"><div class="name">Panini Melt<div class="desc">Turkey &amp; provolone, ham &amp; swiss, or roast beef &amp; swiss — mix and match</div></div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Beef Brisket or Pulled Pork Flatbread</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Cranberry Turkey Sandwich</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Deli Sandwich</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Grilled Cheese &amp; Tomato Soup</div><div class="price">$10.35</div></div>
+          <div class="menu-item"><div class="name">Lime Chicken Tortilla Crisp</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Veggie Wrap, Flatbread or Bagel</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">1/2 and 1/2 Combo</div><div class="price">$10.80</div></div>
+        </div>
+        <div class="menu-group reveal">
+          <h3>Salads</h3>
+          <div class="menu-item"><div class="name">Cranberry Apple Walnut Salad</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">House Salad</div><div class="price">$10.83</div></div>
+          <br>
+          <br>
+          <h3>Sides</h3>
+          <div class="menu-item"><div class="name">Potato Chips · Coleslaw · Fresh Fruit</div></div>
+          <div class="menu-item"><div class="name">Tomato Soup · Broccoli Soup · Side Salad</div></div>
+        </div>
+      </div>
+      <div class="gf-note reveal spotlight">
+        <strong>Gluten Free</strong>
+        We make our own gluten free sandwich bread in-house, and also take orders for gluten free rolls, cinnamon rolls, and sweet breads. Call or message us on Facebook for pricing — please allow 48 hours for bakery orders.
+      </div>
+    </div>
+<br>
+
+    <!-- SEASONAL -->
+    <div class="menu-panel" id="panel-seasonal">
+      <div class="menu-columns">
+        <div class="menu-group reveal">
+          <h3>Seasonal Sandwiches &amp; Salads</h3>
+          <div class="menu-item"><div class="name">Mediterranean Wrap</div><div class="price">$11.31</div></div>
+          <div class="menu-item"><div class="name">Mediterranean Salad</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Dill Chicken Sandwich</div><div class="price">$10.83</div></div>
+          <div class="menu-item"><div class="name">Crunch Wrap</div><div class="price">$10.83</div></div>
+        </div>
+
+        <div class="menu-group reveal">
+          <h3>Seasonal Frappes &amp; Sips</h3>
+          <div class="menu-item"><div class="name">Sweet Purple Frappe</div><div class="price">$5.50</div></div>
+          <div class="menu-item"><div class="name">Cherry Red Velvet Frappe</div><div class="price">$5.50</div></div>
+          <div class="menu-item"><div class="name">Whipped Strawberry Lemonade</div><div class="price">$6.25</div></div>
+          <div class="menu-item"><div class="name">Pistachio Frappe</div><div class="price">$5.50</div></div>
+        </div>
+      </div>
+    </div>
+
+<section class="section community alt" id="community">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="tag">Community</span>
+        <h2>Spotted on Linden Street</h2>
+        <p><strong>Instagram: @lindenstreetcoffeehouse</strong> — behind-the-scenes shots of our eats and beverages</p>
+      </div>
+      <a href="https://instagram.com/lindenstreetcoffeehouse/" class="btn-ghost-dark" target="_blank" rel="noopener">Follow on Instagram</a>
+    </div>
+  </div>
+
+  <div class="community-strip reveal">
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c1.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c2.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c3.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c4.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c5.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+    <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
+      <img src="images/c6.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
+      <span class="community-overlay">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
+      </span>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="merch">
+  <div class="wrap">
+    <div class="merch-layout">
+      <div class="section-head merch-text reveal">
+        <div>
+          <span class="tag">Shop</span>
+          <h2>Merch</h2>
+          <p>Take a piece of Linden Street home with you — coffee-inspired tees, printed to order and shipped straight from the print shop.</p>
+        </div>
+      </div>
+
+      <div class="merch-carousel-col">
+        <div class="merch-carousel reveal" id="merchCarousel">
+      <button class="carousel-arrow carousel-prev" id="merchPrev" aria-label="Previous shirt" type="button">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+
+      <div class="carousel-viewport">
+        <div class="carousel-track" id="merchTrack">
+          <div class="carousel-slide" data-index="0">
+            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27528368/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino" target="_blank" rel="noopener" tabindex="-1">
+              <div class="merch-photo-wrap">
+                <img src="https://images-api.printify.com/mockup/69c1c8ec67a0a0a7e105ce96/67446/97992/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino.jpg?camera_label=front&revision=1777235490395&s=800" alt="Coffee Gnome Collection T-Shirt, Linden Street Coffeehouse" loading="lazy">
+              </div>
+              <div class="merch-photo-info">
+                <div class="merch-photo-name">Coffee Gnome Collection Tee</div>
+                <div class="merch-photo-price">$17.63</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-slide" data-index="1">
+            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010117/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee" target="_blank" rel="noopener" tabindex="-1">
+              <div class="merch-photo-wrap">
+                <img src="https://images-api.printify.com/mockup/699d134322f226d12104725e/73207/98445/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee.jpg?camera_label=front&revision=1771902067893&s=800" alt="Sip Happens Coffee Helps T-shirt" loading="lazy">
+              </div>
+              <div class="merch-photo-info">
+                <div class="merch-photo-name">Sip Happens Coffee Helps Tee</div>
+                <div class="merch-photo-price">$20.68</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-slide" data-index="2">
+            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010113/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography" target="_blank" rel="noopener" tabindex="-1">
+              <div class="merch-photo-wrap">
+                <img src="https://images-api.printify.com/mockup/699d138042eb8595e80e7c9c/79103/98445/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography.jpg?camera_label=front&revision=1771902062543&s=800" alt="Coffee: Fuel for the Sleepless T-shirt" loading="lazy">
+              </div>
+              <div class="merch-photo-info">
+                <div class="merch-photo-name">Fuel for the Sleepless Tee</div>
+                <div class="merch-photo-price">$20.68</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-slide" data-index="3">
+            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010111/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee" target="_blank" rel="noopener" tabindex="-1">
+              <div class="merch-photo-wrap">
+                <img src="https://images-api.printify.com/mockup/699d138242eb8595e80e7c9d/73207/98445/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee.jpg?camera_label=front&revision=1771902062014&s=800" alt="Life's Short Drink Good Coffee T-shirt" loading="lazy">
+              </div>
+              <div class="merch-photo-info">
+                <div class="merch-photo-name">Life's Short, Drink Good Coffee Tee</div>
+                <div class="merch-photo-price">$20.68</div>
+              </div>
+            </a>
+          </div>
+
+          <div class="carousel-slide" data-index="4">
+            <a class="merch-cta-card" href="https://dreamfabricsetc.printify.me/products" target="_blank" rel="noopener" tabindex="-1">
+              <span class="merch-cta-eyebrow">The Full Collection</span>
+              <span class="merch-cta-icon">
+                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v13H8l-4 4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+              </span>
+              <span class="merch-cta-title">See All Merch</span>
+              <span class="merch-cta-sub">More coffee-inspired tees &amp; gear</span>
+              <span class="merch-cta-arrow">→</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-arrow carousel-next" id="merchNext" aria-label="Next shirt" type="button">
+        <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+        </div>
+
+        <div class="carousel-dots" id="merchDots"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section alt" id="visit">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <div>
+        <span class="tag">Find Us</span>
+        <h2>Come say hi on Linden Street</h2>
+        <p>Dine in, carry out, or swing by for pickup. We're right in the heart of Lamoni.</p>
+      </div>
+    </div>
+    <div class="visit-grid reveal">
+      <div class="visit-map">
+        <iframe
+          title="Linden Street Coffeehouse & Cafe map"
+          src="https://www.google.com/maps?q=104+S+Linden+Street,+Lamoni,+IA+50140&output=embed"
+          width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+      <div class="visit-card lift spotlight">
+        <h3>Linden Street Coffeehouse &amp; Cafe</h3>
+        <p class="addr">104 S Linden Street<br>Lamoni, IA 50140</p>
+        <div class="hours-row"><span>Mon – Sat</span><span>7:00am – 4:00pm</span></div>
+        <div class="hours-row"><span>Lunch ends</span><span>1:30pm daily</span></div>
+        <div class="hours-row"><span>Wed Supper</span><span>5:00pm – 7:00pm</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        <p style="margin-top:18px; font-size:0.88rem; color:rgba(246,232,200,0.75);">Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
+        <div class="visit-actions">
+          <a href="https://www.google.com/maps?q=104+S+Linden+Street,+Lamoni,+IA+50140" class="btn btn-primary" target="_blank" rel="noopener">Get Directions</a>
+          <a href="tel:6417844700" class="btn-ghost-dark">Call 641-784-4700</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="footer-grid reveal">
+      <div>
+        <div class="foot-brand">Linden Street Coffeehouse &amp; Cafe</div>
+        <p>104 S Linden Street<br>Lamoni, IA 50140</p>
+        <p><a href="tel:6417844700" class="plain">641-784-4700</a></p>
+        <div class="social-row">
+          <a href="https://facebook.com/LindenCoffeeHouse" aria-label="Facebook">f</a>
+          <a href="https://instagram.com/lindenstreetcoffeehouse/" aria-label="Instagram">ig</a>
+        </div>
+      </div>
+      <div>
+        <h4>Hours</h4>
+        <div class="hours-row"><span>Mon – Sat</span><span>7:00am – 4:00pm</span></div>
+        <div class="hours-row"><span>Lunch ends</span><span>1:30pm daily</span></div>
+        <div class="hours-row"><span>Wed Supper</span><span>5:00pm – 7:00pm</span></div>
+        <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
+        <p style="margin-top:16px; font-size:0.85rem;">Dine in or carry out. Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <p><a href="#menu" class="plain">Full Menu</a></p>
+        <p><a href="#menu" data-open-tab="seasonal" class="plain">Seasonal Specials</a></p>
+        <p><a href="#merch" class="plain">Merch</a></p>
+        <p><a href="https://order.tbdine.com/pickup/51395" class="plain">Order Online</a></p>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Linden Street Coffeehouse &amp; Cafe. All rights reserved.</span>
+      <span>Lamoni, Iowa</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
