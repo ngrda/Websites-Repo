@@ -1,16 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Linden Street Coffeehouse & Cafe — Lamoni, IA</title>
-<meta name="description" content="Coffeehouse and cafe in Lamoni, Iowa. Coffee, frappes, breakfast, lunch paninis, seasonal drinks, and merch. Order online for pickup.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;0,9..144,900;1,9..144,500;1,9..144,600&family=Work+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&family=Caveat:wght@500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linden Street Coffeehouse &amp; Cafe — Lamoni, IA</title>
+  <meta name="description" content="Coffeehouse and cafe in Lamoni, Iowa. Coffee, frappes, breakfast, lunch paninis, seasonal drinks, and merch. Order online for pickup.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..900;1,9..144,500;1,9..144,600&amp;family=IBM+Plex+Mono:wght@400;500&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
+<!-- SVG Sprite for reusing symbols -->
+<svg style="display:none;" aria-hidden="true">
+  <symbol id="icon-heart" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35Z"/>
+  </symbol>
+  <symbol id="icon-facebook" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.99 3.66 9.12 8.44 9.88v-6.99H7.9v-2.89h2.54V9.8c0-2.51 1.49-3.89 3.78-3.89 1.09 0 2.23.19 2.23.19v2.47h-1.26c-1.24 0-1.63.77-1.63 1.56v1.88h2.78l-.44 2.89h-2.34v6.99C18.34 21.12 22 16.99 22 12z"/>
+  </symbol>
+  <symbol id="icon-instagram" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+  </symbol>
+  <symbol id="icon-email" viewBox="0 0 24 24">
+    <path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+  </symbol>
+</svg>
+
+<!-- Logo preload before opening page -->
 <div class="preloader" id="preloader" aria-hidden="true">
   <div class="preloader-mark">
     <svg width="48" height="48" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -24,6 +42,7 @@
 
 <div class="scroll-progress" id="scrollProgress"></div>
 
+<!-- Navigation Bar -->
 <header class="site-nav">
   <div class="nav-inner">
     <a href="#home" class="brandmark">
@@ -58,6 +77,7 @@
   </div>
 </section>
 
+<!-- Seasonal Update  -->
 <div class="order-strip">
   <div class="wrap order-inner reveal">
     <div>
@@ -68,12 +88,9 @@
   </div>
 </div>
 
+<!-- Moving Strip -->
 <div class="marquee-strip">
   <div class="marquee-track">
-    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
     <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
     <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
     <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
@@ -84,197 +101,191 @@
     <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
     <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
     <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">HOMEMADE</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">COOL VIBES</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">SPECIALTY COFFEE</span><span class="marquee-dot">·</span>
-    <span class="marquee-item">GLUTEN FREE</span><span class="marquee-dot">·</span>
   </div>
 </div>
 
-
+<!-- Menu -->
 <div class="menu-header" id="menu">
   <div class="tabbar">
-    <button class="active" data-tab="breakfast">BREAKFAST & DRINKS</button>
+    <button class="active" data-tab="breakfast">BREAKFAST &amp; DRINKS</button>
     <button data-tab="coffee">COFFEE</button>
-    <button data-tab="smoothies">MILKSHAKES, SMOOTHIES & FRAPPE</button>
+    <button data-tab="smoothies">MILKSHAKES, SMOOTHIES &amp; FRAPPE</button>
     <button data-tab="lunch">LUNCH</button>
     <button data-tab="seasonal">SEASONAL</button>
   </div>
 </div>
 
-    <!-- BREAKFAST & DRINKS -->
-    <div class="menu-panel active" id="panel-breakfast">
-      <div class="menu-columns">
-        <div class="menu-group reveal">
-          <h3>Breakfast · 7am–2:30pm</h3>
-          <div class="menu-item"><div class="name">Quiche</div><div class="price">$10.80</div></div>
-          <div class="menu-item"><div class="name">Sausage Egg Cheese Muffin</div><div class="price">$5.70</div></div>
-          <div class="menu-item"><div class="name">Toasted Bagel</div><div class="price">$5.35</div></div>
-          <div class="menu-item"><div class="name">Yogurt Parfait</div><div class="price">$5.35</div></div>
-          <hr color="#D9A62E">
-          <div class="menu-item"><div class="name">Breakfast Egg Wrap<div class="desc">Meat or veggie loaded, chipotle mayo or salsa</div></div><div class="price">$5.70</div></div>
-          <div class="menu-item"><div class="name">Biscuits &amp; Gravy<div class="desc">Half order or whole order</div></div><div class="price">$5.56 / $7.70</div></div>
-          <br>
-          <span class="subnote">Available daily, 7–10:30am</span>
-        </div>
+<main>
+  <!-- BREAKFAST & DRINKS -->
+  <div class="menu-panel active" id="panel-breakfast">
+    <div class="menu-columns">
+      <div class="menu-group reveal">
+        <h3>Breakfast · 7am–2:30pm</h3>
+        <div class="menu-item"><div class="name">Quiche</div><div class="price">$10.80</div></div>
+        <div class="menu-item"><div class="name">Sausage Egg Cheese Muffin</div><div class="price">$5.70</div></div>
+        <div class="menu-item"><div class="name">Toasted Bagel</div><div class="price">$5.35</div></div>
+        <div class="menu-item"><div class="name">Yogurt Parfait</div><div class="price">$5.35</div></div>
+        <div class="menu-divider"></div>
+        <div class="menu-item"><div class="name">Breakfast Egg Wrap<div class="desc">Meat or veggie loaded, chipotle mayo or salsa</div></div><div class="price">$5.70</div></div>
+        <div class="menu-item"><div class="name">Biscuits &amp; Gravy<div class="desc">Half order or whole order</div></div><div class="price">$5.56 / $7.70</div></div>
+        <span class="subnote mt-12">Available daily, 7–10:30am</span>
+      </div>
 
-        <div class="menu-group reveal">
-          <h3>Iced Tea, Soda &amp; Juice</h3>
-          <span class="subnote">16oz unless noted</span>
-          <div class="menu-item"><div class="name">Soda Can, 12oz</div><div class="price">$1.17</div></div>
-          <div class="menu-item"><div class="name">Apple Juice</div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Blackberry Sage Iced Tea<div class="desc">Blackberry-sage black iced tea</div></div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Chocolate Milk</div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Happy Hibiscus Iced Tea<div class="desc">Hibiscus herbal iced tea</div></div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Lemonade<div class="desc">Lemonade concentrate, water, ice</div></div><div class="price">$3.74</div></div>
-          <div class="menu-item"><div class="name">Orange Juice</div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Pineapple Juice</div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Regular Milk</div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Southern Sweet Iced Tea<div class="desc">Sweetened black iced tea</div></div><div class="price">$1.87</div></div>
-          <div class="menu-item"><div class="name">Unsweetened Iced Tea</div><div class="price">$1.87</div></div>
-        </div>
+      <div class="menu-group reveal">
+        <h3>Iced Tea, Soda &amp; Juice</h3>
+        <span class="subnote">16oz unless noted</span>
+        <div class="menu-item"><div class="name">Soda Can, 12oz</div><div class="price">$1.17</div></div>
+        <div class="menu-item"><div class="name">Apple Juice</div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Blackberry Sage Iced Tea<div class="desc">Blackberry-sage black iced tea</div></div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Chocolate Milk</div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Happy Hibiscus Iced Tea<div class="desc">Hibiscus herbal iced tea</div></div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Lemonade<div class="desc">Lemonade concentrate, water, ice</div></div><div class="price">$3.74</div></div>
+        <div class="menu-item"><div class="name">Orange Juice</div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Pineapple Juice</div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Regular Milk</div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Southern Sweet Iced Tea<div class="desc">Sweetened black iced tea</div></div><div class="price">$1.87</div></div>
+        <div class="menu-item"><div class="name">Unsweetened Iced Tea</div><div class="price">$1.87</div></div>
       </div>
     </div>
+  </div>
 
-    <!-- COFFEE -->
-    <div class="menu-panel" id="panel-coffee">
-      <div class="menu-columns">
-        <div class="menu-group reveal">
-          <h3>Hot Coffees</h3>
-          <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
-          <div class="menu-item"><div class="name">Latte</div><div class="price">$3.60</div></div>
-          <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.44</div></div>
-          <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, steamed milk</div></div><div class="price">$4.21</div></div>
-          <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, steamed milk, whipped cream</div></div><div class="price">$4.44</div></div>
-          <div class="menu-item"><div class="name">Dark Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">White Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">Nutty / Salty Professor, 16oz<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">Espresso Shots</div><div class="price">$2.80</div></div>
-          <div class="menu-item"><div class="name">Drip Coffee</div><div class="price">$2.10</div></div>
-          <div class="menu-item"><div class="name">Caramel Cider<div class="desc">Apple cider, steamed with caramel and cinnamon, whipped cream</div></div><div class="price">$4.44</div></div>
-          <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, steamed with milk</div></div><div class="price">$4.44</div></div>
-          <div class="menu-item"><div class="name">London Fog<div class="desc">Earl Grey tea, French vanilla, steamed milk</div></div><div class="price">$4.21</div></div>
-          <div class="menu-item"><div class="name">Hot Chocolate<div class="desc">Ghirardelli dark chocolate, steamed milk, whipped cream</div></div><div class="price">$3.74</div></div>
-          <div class="menu-item"><div class="name">Steamer<div class="desc">Steamed milk with your choice of flavor</div></div><div class="price">$3.74</div></div>
-          <div class="menu-item"><div class="name">Hot Tea<div class="desc">Flavor selected at pickup</div></div><div class="price">$1.87</div></div>
-        </div>
+  <!-- COFFEE -->
+  <div class="menu-panel" id="panel-coffee">
+    <div class="menu-columns">
+      <div class="menu-group reveal">
+        <h3>Hot Coffees</h3>
+        <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
+        <div class="menu-item"><div class="name">Latte</div><div class="price">$3.60</div></div>
+        <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.44</div></div>
+        <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, steamed milk</div></div><div class="price">$4.21</div></div>
+        <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, steamed milk, whipped cream</div></div><div class="price">$4.44</div></div>
+        <div class="menu-item"><div class="name">Dark Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">White Zombie, 16oz<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, steamed milk, whipped cream</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">Nutty / Salty Professor, 16oz<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">Espresso Shots</div><div class="price">$2.80</div></div>
+        <div class="menu-item"><div class="name">Drip Coffee</div><div class="price">$2.10</div></div>
+        <div class="menu-item"><div class="name">Caramel Cider<div class="desc">Apple cider, steamed with caramel and cinnamon, whipped cream</div></div><div class="price">$4.44</div></div>
+        <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, steamed with milk</div></div><div class="price">$4.44</div></div>
+        <div class="menu-item"><div class="name">London Fog<div class="desc">Earl Grey tea, French vanilla, steamed milk</div></div><div class="price">$4.21</div></div>
+        <div class="menu-item"><div class="name">Hot Chocolate<div class="desc">Ghirardelli dark chocolate, steamed milk, whipped cream</div></div><div class="price">$3.74</div></div>
+        <div class="menu-item"><div class="name">Steamer<div class="desc">Steamed milk with your choice of flavor</div></div><div class="price">$3.74</div></div>
+        <div class="menu-item"><div class="name">Hot Tea<div class="desc">Flavor selected at pickup</div></div><div class="price">$1.87</div></div>
+      </div>
 
-        <div class="menu-group reveal">
-          <h3>Iced Coffees</h3>
-          <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
-          <div class="menu-item"><div class="name">Latte</div><div class="price">$4.07</div></div>
-          <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.91</div></div>
-          <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, milk, ice</div></div><div class="price">$4.67</div></div>
-          <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, milk, ice</div></div><div class="price">$4.91</div></div>
-          <div class="menu-item"><div class="name">Dark Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">White Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">Nutty / Salty Professor<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
-          <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, milk, ice</div></div><div class="price">$4.91</div></div>
-          <div class="menu-item"><div class="name">Cold Brew Coffee<div class="desc">House blend, choose to add flavors or cold foam</div></div><div class="price">$3.74</div></div>
-        </div>
+      <div class="menu-group reveal">
+        <h3>Iced Coffees</h3>
+        <div class="menu-item"><div class="name">Americano</div><div class="price">$3.04</div></div>
+        <div class="menu-item"><div class="name">Latte</div><div class="price">$4.07</div></div>
+        <div class="menu-item"><div class="name">Caramel Latte</div><div class="price">$4.91</div></div>
+        <div class="menu-item"><div class="name">Flavored Latte<div class="desc">Espresso, Ghirardelli white chocolate, your choice of flavor, milk, ice</div></div><div class="price">$4.67</div></div>
+        <div class="menu-item"><div class="name">Mocha / White Mocha<div class="desc">Ghirardelli dark or white chocolate, espresso, milk, ice</div></div><div class="price">$4.91</div></div>
+        <div class="menu-item"><div class="name">Dark Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">White Zombie<div class="desc">Ghirardelli dark chocolate, coconut, hazelnut, espresso, milk, ice</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">Nutty / Salty Professor<div class="desc">Caramel sauce, hazelnut, espresso, salt (optional), steamed milk — please specify salty for the salted version</div></div><div class="price">$5.00</div></div>
+        <div class="menu-item"><div class="name">Chai Tea Latte<div class="desc">House-made chai, milk, ice</div></div><div class="price">$4.91</div></div>
+        <div class="menu-item"><div class="name">Cold Brew Coffee<div class="desc">House blend, choose to add flavors or cold foam</div></div><div class="price">$3.74</div></div>
+      </div>
 
-        <div class="menu-group reveal">
-          <h3>Coffee Smoothies, 16oz</h3>
-          <span class="subnote">Espresso-based blended drinks</span>
-          <div class="menu-item"><div class="name">Café Caramel Smoothie<div class="desc">Vanilla ice cream, espresso, caramel sauce, caramel syrup</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Café Chocolate Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Dark Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">White Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Chillin' Professor<div class="desc">Vanilla ice cream, espresso, hazelnut, caramel sauce</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">White Chocolate Peppermint Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, peppermint</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Peanut Butter Cup Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, peanut butter</div></div><div class="price">$5.84</div></div>
-        </div>
+      <div class="menu-group reveal">
+        <h3>Coffee Smoothies, 16oz</h3>
+        <span class="subnote">Espresso-based blended drinks</span>
+        <div class="menu-item"><div class="name">Café Caramel Smoothie<div class="desc">Vanilla ice cream, espresso, caramel sauce, caramel syrup</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Café Chocolate Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Dark Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">White Zombie Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, coconut, hazelnut</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Chillin' Professor<div class="desc">Vanilla ice cream, espresso, hazelnut, caramel sauce</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">White Chocolate Peppermint Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli white chocolate, peppermint</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Peanut Butter Cup Smoothie<div class="desc">Vanilla ice cream, espresso, Ghirardelli chocolate, peanut butter</div></div><div class="price">$5.84</div></div>
       </div>
     </div>
+  </div>
 
-    <!-- MILKSHAKES, SMOOTHIES & FRAPPE -->
-    <div class="menu-panel" id="panel-smoothies">
-      <div class="menu-columns">
-        <div class="menu-group reveal">
-          <h3>Milkshakes &amp; Smoothies, 16oz</h3>
-          <span class="subnote">No coffee — fruit &amp; cream based</span>
-          <div class="menu-item"><div class="name">Milkshake<div class="desc">Vanilla ice cream, your choice of flavor</div></div><div class="price">$5.37</div></div>
-          <div class="menu-item"><div class="name">Berry Blue Smoothie<div class="desc">Blueberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Strawberry Banana Smoothie<div class="desc">Strawberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Fruit Smoothie<div class="desc">Orange juice, pineapple juice, strawberry, banana, honey, ice</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Hawaiian Smoothie<div class="desc">Vanilla ice cream, pineapple juice, coconut</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Dreamsicle Shake<div class="desc">Vanilla ice cream, orange juice, Ghirardelli white chocolate</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Frozen Chai<div class="desc">Vanilla ice cream, house-made chai</div></div><div class="price">$5.84</div></div>
-          <div class="menu-item"><div class="name">Whipped Lemonade<div class="desc">Lemonade concentrate blended with ice and half &amp; half, topped with whipped cream — choose a syrup</div></div><div class="price">$5.14</div></div>
-        </div>
+  <!-- MILKSHAKES, SMOOTHIES & FRAPPE -->
+  <div class="menu-panel" id="panel-smoothies">
+    <div class="menu-columns">
+      <div class="menu-group reveal">
+        <h3>Milkshakes &amp; Smoothies, 16oz</h3>
+        <span class="subnote">No coffee — fruit &amp; cream based</span>
+        <div class="menu-item"><div class="name">Milkshake<div class="desc">Vanilla ice cream, your choice of flavor</div></div><div class="price">$5.37</div></div>
+        <div class="menu-item"><div class="name">Berry Blue Smoothie<div class="desc">Blueberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Strawberry Banana Smoothie<div class="desc">Strawberries, banana, vanilla yogurt, milk, ice</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Fruit Smoothie<div class="desc">Orange juice, pineapple juice, strawberry, banana, honey, ice</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Hawaiian Smoothie<div class="desc">Vanilla ice cream, pineapple juice, coconut</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Dreamsicle Shake<div class="desc">Vanilla ice cream, orange juice, Ghirardelli white chocolate</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Frozen Chai<div class="desc">Vanilla ice cream, house-made chai</div></div><div class="price">$5.84</div></div>
+        <div class="menu-item"><div class="name">Whipped Lemonade<div class="desc">Lemonade concentrate blended with ice and half &amp; half, topped with whipped cream — choose a syrup</div></div><div class="price">$5.14</div></div>
+      </div>
 
-        <div class="menu-group reveal">
-          <h3>Frappes, 16oz</h3>
-          <div class="menu-item"><div class="name">Coconut Crème</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Caramel Extreme</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Cookies &amp; Cream</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Double Fudge Mocha</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Java Chip</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Matcha Green Tea</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Pistachio</div><div class="price">$5.38</div></div>
-          <div class="menu-item"><div class="name">Red Velvet</div><div class="price">$5.38</div></div>
-          <br>
-          <span class="subnote">Add-ons</span>
-          <div class="menu-item"><div class="name">Extra Espresso</div><div class="price">$0.79</div></div>
-          <div class="menu-item"><div class="name">Oat Milk Sub</div><div class="price">$0.93</div></div>
-        </div>
+      <div class="menu-group reveal">
+        <h3>Frappes, 16oz</h3>
+        <div class="menu-item"><div class="name">Coconut Crème</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Caramel Extreme</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Cookies &amp; Cream</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Double Fudge Mocha</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Java Chip</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Matcha Green Tea</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Pistachio</div><div class="price">$5.38</div></div>
+        <div class="menu-item"><div class="name">Red Velvet</div><div class="price">$5.38</div></div>
+        <span class="subnote mt-16">Add-ons</span>
+        <div class="menu-item"><div class="name">Extra Espresso</div><div class="price">$0.79</div></div>
+        <div class="menu-item"><div class="name">Oat Milk Sub</div><div class="price">$0.93</div></div>
       </div>
     </div>
+  </div>
 
-    <!-- LUNCH -->
-    <div class="menu-panel" id="panel-lunch">
-      <div class="menu-columns">
-        <div class="menu-group reveal">
-          <h3>Sandwiches</h3>
-          <span class="subnote">Choose a side with your entree</span>
-          <div class="menu-item"><div class="name">Panini Melt<div class="desc">Turkey &amp; provolone, ham &amp; swiss, or roast beef &amp; swiss — mix and match</div></div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Beef Brisket or Pulled Pork Flatbread</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Cranberry Turkey Sandwich</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Deli Sandwich</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Grilled Cheese &amp; Tomato Soup</div><div class="price">$10.35</div></div>
-          <div class="menu-item"><div class="name">Lime Chicken Tortilla Crisp</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Veggie Wrap, Flatbread or Bagel</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">1/2 and 1/2 Combo</div><div class="price">$10.80</div></div>
-        </div>
-        <div class="menu-group reveal">
-          <h3>Salads</h3>
-          <div class="menu-item"><div class="name">Cranberry Apple Walnut Salad</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">House Salad</div><div class="price">$10.83</div></div>
-          <br>
-          <br>
-          <h3>Sides</h3>
-          <div class="menu-item"><div class="name">Potato Chips · Coleslaw · Fresh Fruit</div></div>
-          <div class="menu-item"><div class="name">Tomato Soup · Broccoli Soup · Side Salad</div></div>
-        </div>
+  <!-- LUNCH -->
+  <div class="menu-panel" id="panel-lunch">
+    <div class="menu-columns">
+      <div class="menu-group reveal">
+        <h3>Sandwiches</h3>
+        <span class="subnote">Choose a side with your entree</span>
+        <div class="menu-item"><div class="name">Panini Melt<div class="desc">Turkey &amp; provolone, ham &amp; swiss, or roast beef &amp; swiss — mix and match</div></div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Beef Brisket or Pulled Pork Flatbread</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Cranberry Turkey Sandwich</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Deli Sandwich</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Grilled Cheese &amp; Tomato Soup</div><div class="price">$10.35</div></div>
+        <div class="menu-item"><div class="name">Lime Chicken Tortilla Crisp</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Veggie Wrap, Flatbread or Bagel</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">1/2 and 1/2 Combo</div><div class="price">$10.80</div></div>
       </div>
-      <div class="gf-note reveal spotlight">
-        <strong>Gluten Free</strong>
-        We make our own gluten free sandwich bread in-house, and also take orders for gluten free rolls, cinnamon rolls, and sweet breads. Call or message us on Facebook for pricing — please allow 48 hours for bakery orders.
+      <div class="menu-group reveal">
+        <h3>Salads</h3>
+        <div class="menu-item"><div class="name">Cranberry Apple Walnut Salad</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">House Salad</div><div class="price">$10.83</div></div>
+        <h3 class="mt-24">Sides</h3>
+        <div class="menu-item"><div class="name">Potato Chips · Coleslaw · Fresh Fruit</div></div>
+        <div class="menu-item"><div class="name">Tomato Soup · Broccoli Soup · Side Salad</div></div>
       </div>
     </div>
-<br>
+    <div class="gf-note reveal spotlight">
+      <strong>Gluten Free</strong>
+      We make our own gluten free sandwich bread in-house, and also take orders for gluten free rolls, cinnamon rolls, and sweet breads. Call or message us on Facebook for pricing — please allow 48 hours for bakery orders.
+    </div>
+  </div>
 
-    <!-- SEASONAL -->
-    <div class="menu-panel" id="panel-seasonal">
-      <div class="menu-columns">
-        <div class="menu-group reveal">
-          <h3>Seasonal Sandwiches &amp; Salads</h3>
-          <div class="menu-item"><div class="name">Mediterranean Wrap</div><div class="price">$11.31</div></div>
-          <div class="menu-item"><div class="name">Mediterranean Salad</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Dill Chicken Sandwich</div><div class="price">$10.83</div></div>
-          <div class="menu-item"><div class="name">Crunch Wrap</div><div class="price">$10.83</div></div>
-        </div>
+  <!-- SEASONAL -->
+  <div class="menu-panel" id="panel-seasonal">
+    <div class="menu-columns">
+      <div class="menu-group reveal">
+        <h3>Seasonal Sandwiches &amp; Salads</h3>
+        <div class="menu-item"><div class="name">Mediterranean Wrap</div><div class="price">$11.31</div></div>
+        <div class="menu-item"><div class="name">Mediterranean Salad</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Dill Chicken Sandwich</div><div class="price">$10.83</div></div>
+        <div class="menu-item"><div class="name">Crunch Wrap</div><div class="price">$10.83</div></div>
+      </div>
 
-        <div class="menu-group reveal">
-          <h3>Seasonal Frappes &amp; Sips</h3>
-          <div class="menu-item"><div class="name">Sweet Purple Frappe</div><div class="price">$5.50</div></div>
-          <div class="menu-item"><div class="name">Cherry Red Velvet Frappe</div><div class="price">$5.50</div></div>
-          <div class="menu-item"><div class="name">Whipped Strawberry Lemonade</div><div class="price">$6.25</div></div>
-          <div class="menu-item"><div class="name">Pistachio Frappe</div><div class="price">$5.50</div></div>
-        </div>
+      <div class="menu-group reveal">
+        <h3>Seasonal Frappes &amp; Sips</h3>
+        <div class="menu-item"><div class="name">Sweet Purple Frappe</div><div class="price">$5.50</div></div>
+        <div class="menu-item"><div class="name">Cherry Red Velvet Frappe</div><div class="price">$5.50</div></div>
+        <div class="menu-item"><div class="name">Whipped Strawberry Lemonade</div><div class="price">$6.25</div></div>
+        <div class="menu-item"><div class="name">Pistachio Frappe</div><div class="price">$5.50</div></div>
       </div>
     </div>
+  </div>
+</main>
 
+<!-- Pictures -->
 <section class="section community alt" id="community">
   <div class="wrap">
     <div class="section-head reveal">
@@ -290,43 +301,32 @@
   <div class="community-strip reveal">
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c1.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c2.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c3.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c4.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c5.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
     <a class="community-photo" href="https://instagram.com/lindenstreetcoffeehouse/" target="_blank" rel="noopener">
       <img src="images/c6.jpg" alt="Customer photo at Linden Street Coffeehouse" loading="lazy">
-      <span class="community-overlay">
-        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21s-7.2-4.35-10-9.1C.4 8.6 2.1 5 5.6 5c2 0 3.4 1.1 4.4 2.6C11 6.1 12.4 5 14.4 5c3.5 0 5.2 3.6 3.6 6.9C19.2 16.65 12 21 12 21Z"/></svg>
-      </span>
+      <span class="community-overlay"><svg class="icon"><use href="#icon-heart"></use></svg></span>
     </a>
   </div>
 </section>
 
+<!-- Merch -->
 <section class="section" id="merch">
   <div class="wrap">
     <div class="merch-layout">
@@ -338,79 +338,80 @@
         </div>
       </div>
 
+      <!-- Carousel -->
       <div class="merch-carousel-col">
         <div class="merch-carousel reveal" id="merchCarousel">
-      <button class="carousel-arrow carousel-prev" id="merchPrev" aria-label="Previous shirt" type="button">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+          <button class="carousel-arrow carousel-prev" id="merchPrev" aria-label="Previous shirt" type="button">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M15 5l-7 7 7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
 
-      <div class="carousel-viewport">
-        <div class="carousel-track" id="merchTrack">
-          <div class="carousel-slide" data-index="0">
-            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27528368/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino" target="_blank" rel="noopener" tabindex="-1">
-              <div class="merch-photo-wrap">
-                <img src="https://images-api.printify.com/mockup/69c1c8ec67a0a0a7e105ce96/67446/97992/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino.jpg?camera_label=front&revision=1777235490395&s=800" alt="Coffee Gnome Collection T-Shirt, Linden Street Coffeehouse" loading="lazy">
+          <div class="carousel-viewport">
+            <div class="carousel-track" id="merchTrack">
+              <div class="carousel-slide" data-index="0">
+                <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27528368/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino" target="_blank" rel="noopener" tabindex="-1">
+                  <div class="merch-photo-wrap">
+                    <img src="https://images-api.printify.com/mockup/69c1c8ec67a0a0a7e105ce96/67446/97992/coffee-gnome-collection-t-shirt-linden-street-coffeehouse-espresso-latte-cappuccino.jpg?camera_label=front&amp;revision=1777235490395&amp;s=800" alt="Coffee Gnome Collection T-Shirt" loading="lazy">
+                  </div>
+                  <div class="merch-photo-info">
+                    <div class="merch-photo-name">Coffee Gnome Collection Tee</div>
+                    <div class="merch-photo-price">$17.63</div>
+                  </div>
+                </a>
               </div>
-              <div class="merch-photo-info">
-                <div class="merch-photo-name">Coffee Gnome Collection Tee</div>
-                <div class="merch-photo-price">$17.63</div>
+
+              <div class="carousel-slide" data-index="1">
+                <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010117/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee" target="_blank" rel="noopener" tabindex="-1">
+                  <div class="merch-photo-wrap">
+                    <img src="https://images-api.printify.com/mockup/699d134322f226d12104725e/73207/98445/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee.jpg?camera_label=front&amp;revision=1771902067893&amp;s=800" alt="Sip Happens Coffee Helps T-shirt" loading="lazy">
+                  </div>
+                  <div class="merch-photo-info">
+                    <div class="merch-photo-name">Sip Happens Coffee Helps Tee</div>
+                    <div class="merch-photo-price">$20.68</div>
+                  </div>
+                </a>
               </div>
-            </a>
+
+              <div class="carousel-slide" data-index="2">
+                <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010113/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography" target="_blank" rel="noopener" tabindex="-1">
+                  <div class="merch-photo-wrap">
+                    <img src="https://images-api.printify.com/mockup/699d138042eb8595e80e7c9c/79103/98445/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography.jpg?camera_label=front&amp;revision=1771902062543&amp;s=800" alt="Coffee: Fuel for the Sleepless T-shirt" loading="lazy">
+                  </div>
+                  <div class="merch-photo-info">
+                    <div class="merch-photo-name">Fuel for the Sleepless Tee</div>
+                    <div class="merch-photo-price">$20.68</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="carousel-slide" data-index="3">
+                <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010111/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee" target="_blank" rel="noopener" tabindex="-1">
+                  <div class="merch-photo-wrap">
+                    <img src="https://images-api.printify.com/mockup/699d138242eb8595e80e7c9d/73207/98445/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee.jpg?camera_label=front&amp;revision=1771902062014&amp;s=800" alt="Life's Short Drink Good Coffee T-shirt" loading="lazy">
+                  </div>
+                  <div class="merch-photo-info">
+                    <div class="merch-photo-name">Life's Short, Drink Good Coffee Tee</div>
+                    <div class="merch-photo-price">$20.68</div>
+                  </div>
+                </a>
+              </div>
+
+              <div class="carousel-slide" data-index="4">
+                <a class="merch-cta-card" href="https://dreamfabricsetc.printify.me/products" target="_blank" rel="noopener" tabindex="-1">
+                  <span class="merch-cta-eyebrow">The Full Collection</span>
+                  <span class="merch-cta-icon">
+                    <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v13H8l-4 4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+                  </span>
+                  <span class="merch-cta-title">See All Merch</span>
+                  <span class="merch-cta-sub">More coffee-inspired tees &amp; gear</span>
+                  <span class="merch-cta-arrow">→</span>
+                </a>
+              </div>
+            </div>
           </div>
 
-          <div class="carousel-slide" data-index="1">
-            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010117/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee" target="_blank" rel="noopener" tabindex="-1">
-              <div class="merch-photo-wrap">
-                <img src="https://images-api.printify.com/mockup/699d134322f226d12104725e/73207/98445/sip-happens-coffee-helps-t-shirt-funny-coffee-quote-tee.jpg?camera_label=front&revision=1771902067893&s=800" alt="Sip Happens Coffee Helps T-shirt" loading="lazy">
-              </div>
-              <div class="merch-photo-info">
-                <div class="merch-photo-name">Sip Happens Coffee Helps Tee</div>
-                <div class="merch-photo-price">$20.68</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="carousel-slide" data-index="2">
-            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010113/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography" target="_blank" rel="noopener" tabindex="-1">
-              <div class="merch-photo-wrap">
-                <img src="https://images-api.printify.com/mockup/699d138042eb8595e80e7c9c/79103/98445/coffee-fuel-for-the-sleepless-t-shirt-minimal-script-typography.jpg?camera_label=front&revision=1771902062543&s=800" alt="Coffee: Fuel for the Sleepless T-shirt" loading="lazy">
-              </div>
-              <div class="merch-photo-info">
-                <div class="merch-photo-name">Fuel for the Sleepless Tee</div>
-                <div class="merch-photo-price">$20.68</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="carousel-slide" data-index="3">
-            <a class="merch-photo-card" href="https://dreamfabricsetc.printify.me/product/27010111/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee" target="_blank" rel="noopener" tabindex="-1">
-              <div class="merch-photo-wrap">
-                <img src="https://images-api.printify.com/mockup/699d138242eb8595e80e7c9d/73207/98445/lifes-short-drink-good-coffee-t-shirt-minimal-text-coffee-tee.jpg?camera_label=front&revision=1771902062014&s=800" alt="Life's Short Drink Good Coffee T-shirt" loading="lazy">
-              </div>
-              <div class="merch-photo-info">
-                <div class="merch-photo-name">Life's Short, Drink Good Coffee Tee</div>
-                <div class="merch-photo-price">$20.68</div>
-              </div>
-            </a>
-          </div>
-
-          <div class="carousel-slide" data-index="4">
-            <a class="merch-cta-card" href="https://dreamfabricsetc.printify.me/products" target="_blank" rel="noopener" tabindex="-1">
-              <span class="merch-cta-eyebrow">The Full Collection</span>
-              <span class="merch-cta-icon">
-                <svg viewBox="0 0 24 24" fill="none"><path d="M4 4h16v13H8l-4 4V4Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M8 9h8M8 13h5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
-              </span>
-              <span class="merch-cta-title">See All Merch</span>
-              <span class="merch-cta-sub">More coffee-inspired tees &amp; gear</span>
-              <span class="merch-cta-arrow">→</span>
-            </a>
-          </div>
-        </div>
-      </div>
-
-      <button class="carousel-arrow carousel-next" id="merchNext" aria-label="Next shirt" type="button">
-        <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-      </button>
+          <button class="carousel-arrow carousel-next" id="merchNext" aria-label="Next shirt" type="button">
+            <svg viewBox="0 0 24 24" fill="none"><path d="M9 5l7 7-7 7" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
         </div>
 
         <div class="carousel-dots" id="merchDots"></div>
@@ -419,6 +420,7 @@
   </div>
 </section>
 
+<!-- Location -->
 <section class="section alt" id="visit">
   <div class="wrap">
     <div class="section-head reveal">
@@ -431,8 +433,8 @@
     <div class="visit-grid reveal">
       <div class="visit-map">
         <iframe
-          title="Linden Street Coffeehouse & Cafe map"
-          src="https://www.google.com/maps?q=104+S+Linden+Street,+Lamoni,+IA+50140&output=embed"
+          title="Linden Street Coffeehouse &amp; Cafe map"
+          src="https://www.google.com/maps?q=104+S+Linden+Street,+Lamoni,+IA+50140&amp;output=embed"
           width="100%" height="100%" style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
@@ -443,7 +445,7 @@
         <div class="hours-row"><span>Lunch ends</span><span>1:30pm daily</span></div>
         <div class="hours-row"><span>Wed Supper</span><span>5:00pm – 7:00pm</span></div>
         <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
-        <p style="margin-top:18px; font-size:0.88rem; color:rgba(246,232,200,0.75);">Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
+        <p class="delivery-note">Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
         <div class="visit-actions">
           <a href="https://www.google.com/maps?q=104+S+Linden+Street,+Lamoni,+IA+50140" class="btn btn-primary" target="_blank" rel="noopener">Get Directions</a>
           <a href="tel:6417844700" class="btn-ghost-dark">Call 641-784-4700</a>
@@ -460,9 +462,18 @@
         <div class="foot-brand">Linden Street Coffeehouse &amp; Cafe</div>
         <p>104 S Linden Street<br>Lamoni, IA 50140</p>
         <p><a href="tel:6417844700" class="plain">641-784-4700</a></p>
+        
+        <!-- Social Media -->
         <div class="social-row">
-          <a href="https://facebook.com/LindenCoffeeHouse" aria-label="Facebook">f</a>
-          <a href="https://instagram.com/lindenstreetcoffeehouse/" aria-label="Instagram">ig</a>
+          <a href="https://facebook.com/LindenCoffeeHouse" aria-label="Facebook" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#icon-facebook"></use></svg>
+          </a>
+          <a href="https://instagram.com/lindenstreetcoffeehouse/" aria-label="Instagram" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#icon-instagram"></use></svg>
+          </a>
+          <a href="mailto:info@lindenstreetcoffeehouse.com" aria-label="Email" target="_blank" rel="noopener">
+            <svg class="icon"><use href="#icon-email"></use></svg>
+          </a>
         </div>
       </div>
       <div>
@@ -471,7 +482,7 @@
         <div class="hours-row"><span>Lunch ends</span><span>1:30pm daily</span></div>
         <div class="hours-row"><span>Wed Supper</span><span>5:00pm – 7:00pm</span></div>
         <div class="hours-row"><span>Sunday</span><span>Closed</span></div>
-        <p style="margin-top:16px; font-size:0.85rem;">Dine in or carry out. Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
+        <p class="footer-subtext">Dine in or carry out. Local delivery Tuesday &amp; Wednesday — call ahead or order online.</p>
       </div>
       <div>
         <h4>Quick Links</h4>
