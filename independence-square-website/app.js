@@ -704,6 +704,12 @@ let currentCategory = "all";
  * once the HTML structural tree is parsed and safe to read.
  */
 document.addEventListener("DOMContentLoaded", () => {
+    // Forzar el scroll al inicio al refrescar la página
+    if ('scrollRestoration' in history) {
+        history.scrollRestoration = 'manual';
+    }
+    window.scrollTo(0, 0);
+
     initNavbar();
     syncMetricsData();
     initScrollReveal();
@@ -717,6 +723,16 @@ document.addEventListener("DOMContentLoaded", () => {
     // Activates the default tab/page (History) and syncs the nav highlight state
     showPage("history-section");
 });
+
+/**
+ * Reinicia la aplicación al estado inicial (History section desde arriba)
+ * simulando un refresco limpio de la interfaz.
+ */
+function resetToHome() {
+    closeModal();
+    showPage("history-section");
+    window.scrollTo({ top: 0, behavior: "smooth" });
+}
 
 /**
  * Switches the site between single-section "pages" (tabs) instead of one
@@ -1031,7 +1047,7 @@ const ICONS = {
     map: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="1 6 1 22 8 18 16 22 23 18 23 2 16 6 8 2 1 6"></polygon><line x1="8" y1="2" x2="8" y2="18"></line><line x1="16" y1="6" x2="16" y2="22"></line></svg>`,
     flag: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path><line x1="4" y1="22" x2="4" y2="15"></line></svg>`,
     campfire: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2s4 4 4 8a4 4 0 0 1-8 0c0-1.5 1-2.5 1-2.5S8 9 8 11a4 4 0 0 0 8 0c0-4-4-9-4-9z"></path><path d="M5 21h14"></path></svg>`,
-    users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>`
+    users: `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 1 0 7.75"></path></svg>`
 };
 
 /**
