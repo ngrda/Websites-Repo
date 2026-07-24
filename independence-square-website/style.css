@@ -55,13 +55,31 @@ body {
     box-shadow: 0 10px 40px rgba(4, 19, 52, 0.15);
 }
 
-.nav-brand {
+.nav-brand, .menu-brand-center {
     font-family: var(--font-serif);
     font-size: 1.5rem;
     color: var(--gold);
     font-weight: 700;
     letter-spacing: 1px;
     text-shadow: 0 2px 4px rgba(4, 19, 52, 0.3);
+    text-decoration: none !important;
+    cursor: pointer;
+    display: inline-block;
+}
+
+.nav-brand:hover,
+.nav-brand:visited,
+.nav-brand:focus,
+.menu-brand-center:hover,
+.menu-brand-center:visited,
+.menu-brand-center:focus {
+    text-decoration: none !important;
+}
+
+.menu-brand-center {
+    font-size: 18px;
+    color: var(--accent);
+    text-shadow: none;
 }
 
 .nav-links {
@@ -340,13 +358,6 @@ body {
     cursor: pointer;
     padding: 0;
     line-height: 1;
-}
-
-.menu-brand-center {
-    font-family: var(--font-serif);
-    font-size: 18px;
-    font-weight: 700;
-    color: var(--accent);
 }
 
 .mobile-menu-content {
@@ -2074,6 +2085,19 @@ footer strong { color: var(--gold); }
 #modalContainer::-webkit-scrollbar { width: 8px; }
 #modalContainer::-webkit-scrollbar-track { background: #eee; }
 #modalContainer::-webkit-scrollbar-thumb { background: var(--gold); border-radius: 10px; }
+
+/* --- Ajuste de altura para tarjetas del directorio en pantallas de ordenador --- */
+@media (min-width: 1024px) {
+    #directoryGrid .card-image-wrapper,
+    .directory-grid .card-image-wrapper {
+        height: 460px; /* Incrementado desde 400px para mayor presencia vertical */
+    }
+
+    #directoryGrid .card-body,
+    .directory-grid .card-body {
+        padding: 2rem 1.8rem; /* Mayor aire interno vertical */
+    }
+}
 
 /* --- Responsive Media Queries --- */
 @media (min-width: 992px) {
