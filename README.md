@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Websites Repo by Nuria García Ruiz de Alarcón
 
 Personal repository featuring front-end web projects — static sites and small interactive web apps built with HTML, CSS, and JavaScript.
