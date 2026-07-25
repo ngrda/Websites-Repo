@@ -30,7 +30,7 @@ A curated collection of website builds and demos.
 
 ## 🚀 Usage
 
-Each project folder contains its own README with setup and usage instructions. All projects in this repo are static sites — no build step required, just open `index.html` or serve the folder locally.
+Each project folder contains its own README with setup and usage instructions. All projects in this repo are static sites — no build step required, just open the Live Demo and you will be able to explore the web.
 
 ---
 
