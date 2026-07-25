@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Local | Unique Upscale Dining Experience | Watertown, SD</title>
+  <meta name="description" content="Enjoy a unique dining experience with top quality steaks, 50+ bourbons, and a welcoming atmosphere at downtown Watertown, South Dakota's newest dining experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- HEADER / NAVBAR -->
+  <header class="header">
+    <div class="topbar-wrapper">
+      <div class="container topbar">
+        <!-- ICONOS NAVEGABLES (IZQUIERDA) -->
+        <div class="topbar-icons">
+          <a href="#hero" title="Home">
+            <svg viewBox="0 0 24 24"><path d="M4 21V8l8-5 8 5v13" stroke-linecap="round" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#menu" title="Menu">
+            <svg viewBox="0 0 24 24"><path d="M7 3v7a2 2 0 0 0 2 2h0a2 2 0 0 0 2-2V3M8 12v9M17 3c-1.5 1.5-2 3-2 6s.5 4.5 2 6M17 3v18" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a href="#location" title="Location">
+            <svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z" stroke-linecap="round" stroke-linejoin="round"/><circle cx="12" cy="10" r="2.4"/></svg>
+          </a>
+        </div>
+
+        <!-- TÍTULO THE LOCAL (CENTRADO ABSOLUTO) -->
+        <a href="#hero" class="topbar-logo" id="brand-name">
+          <span class="logo-icon">TL</span>
+          <span class="logo-text">The Local</span>
+        </a>
+
+        <!-- UBICACIÓN (DERECHA) -->
+        <div class="topbar-location">
+          <a href="#location" class="location-link" style="display: flex; align-items: center; gap: 6px;">
+            <svg viewBox="0 0 24 24" width="16" height="16" stroke="currentColor" fill="none" stroke-width="2"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            <span>Watertown, SD</span>
+          </a>
+          <button class="hamburger-btn" id="hamburger-btn" aria-label="Open menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <nav class="mainnav">
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#location">Location</a>
+    </nav>
+
+    <!-- MENÚ MÓVIL (HAMBURGUESA) -->
+    <nav class="mobile-menu" id="mobile-menu">
+      <a href="#about">About Us</a>
+      <a href="#menu">Menu</a>
+      <a href="#offerings">Offerings</a>
+      <a href="#location">Location</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <div class="hero-frame">
+      <span class="hero-eyebrow">Our Masterpiece</span>
+      <h1 class="hero-title">Welcome to The Local</h1>
+      <p class="hero-description">
+        A delicate symphony of flavors, where top quality steaks meet 60+ premium bourbons and 36 regional craft beers. A true culinary landmark in the heart of downtown Watertown.
+      </p>
+      <a href="#menu" class="btn-hero">Explore Our Menu</a>
+    </div>
+  </section>
+
+  <!-- SIGNATURE DISHES -->
+  <section class="signature-section" id="offerings">
+    <div class="container">
+      <h2 class="section-title-light reveal">Our Signature Dishes</h2>
+      <p class="section-subtitle-light reveal">Discover the pinnacle of local gastronomy with our signature dishes.</p>
+      
+      <div class="cards-grid reveal-stagger">
+        <div class="dish-card" data-category="cocktails">
+          <div class="dish-card-img">
+            <img src="images/a1.png" alt="Pre-Prohibition Cocktail">
+          </div>
+          <div class="dish-card-info">
+            <div class="dish-text">
+              <span class="dish-title">Pre-Prohibition Cocktail</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="food">
+          <div class="dish-card-img">
+            <img src="images/a2.png" alt="Gochujang Pork Belly">
+          </div>
+          <div class="dish-card-info">
+            <div class="dish-text">
+              <span class="dish-title">Gochujang Pork Belly</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="dish-card" data-category="food">
+          <div class="dish-card-img">
+            <img src="images/a3.png" alt="Spicy Bolognese Pasta">
+          </div>
+          <div class="dish-card-info">
+            <div class="dish-text">
+              <span class="dish-title">Spicy Bolognese Pasta</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURATED MENU SECTION -->
+  <section class="menu-section" id="menu">
+    <div class="container">
+      <div class="menu-header reveal">
+        <h2>Our menu is a carefully curated selection of local masterpieces.</h2>
+        <div class="menu-tabs">
+          <button class="tab-btn active" data-category="cocktails">Cocktails</button>
+          <button class="tab-btn" data-category="wine">Wine</button>
+          <button class="tab-btn" data-category="beer">Beer (36 Taps)</button>
+          <button class="tab-btn" data-category="food">Food Menu</button>
+        </div>
+      </div>
+
+      <div class="menu-content-grid reveal">
+        <!-- FILA 1: ANCHO COMPLETO -->
+        <div class="menu-row-full" id="menu-full-row"></div>
+
+        <!-- FILA 2 IZQUIERDA: MENÚ -->
+        <div class="menu-row-half" id="menu-half-row"></div>
+
+        <!-- FILA 2 DERECHA: FOTO DEL MENÚ -->
+        <div class="menu-preview-img">
+          <img id="menu-dynamic-img" src="images/b1.png" alt="Menu Preview">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT & PHILOSOPHY SECTION -->
+  <section class="about-section" id="about">
+    <div class="container about-grid">
+      <div class="reveal">
+        <div class="quote-box">
+          "Good food is the foundation of genuine happiness."
+        </div>
+        <p style="color: var(--text-muted); font-size: 0.9rem; font-weight: 600; text-transform: uppercase;">— Escoffier</p>
+      </div>
+      <div class="reveal">
+        <h3 style="font-family: var(--font-heading); font-size: 1.8rem; margin-bottom: 16px;">Something for Everyone</h3>
+        <p style="color: var(--text-muted); margin-bottom: 20px;" id="about-body-text">
+          At The Local, there's something for everyone. From hearty classics to fresh, flavorful bowls and handhelds, our menu is built for all tastes.
+        </p>
+        <p style="font-size: 0.85rem; font-weight: 600; color: var(--bg-brown);" id="about-footnote"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- LOCATION SECTION (REEMPLAZA A RESERVAS) -->
+  <section class="location-section" id="location">
+    <div class="container location-grid">
+      <!-- INFO DEL LOCAL (LADO IZQUIERDO) -->
+      <div class="location-info reveal">
+        <h2>Find us in downtown Watertown</h2>
+        <p style="color: var(--text-light-muted); max-width: 420px; margin-bottom: 14px; font-size: 0.9rem;">
+          Located in the heart of historic downtown Watertown, South Dakota. Drop by for craft cocktails, premium steaks, or our rotating taps.
+        </p>
+
+        <p style="font-size: 0.85rem; margin-bottom: 5px;"><strong>Address:</strong> 16 West Kemp Avenue, Watertown, SD 57201</p>
+        <p style="font-size: 0.85rem; margin-bottom: 14px;"><strong>Contact:</strong> Tel: 605-878-3311 | watertownlocal@gmail.com</p>
+
+        <div class="hours-list">
+          <h4 style="margin-bottom: 8px; font-weight: 600; font-size: 0.9rem;">Open For Service</h4>
+          <div class="hours-row"><span>Mon</span> <span>Closed</span></div>
+          <div class="hours-row"><span>Tue - Thu</span> <span>5:00pm - 9:00pm</span></div>
+          <div class="hours-row"><span>Fri - Sat</span> <span>5:00pm - 10:00pm</span></div>
+          <div class="hours-row"><span>Sun</span> <span>Closed</span></div>
+        </div>
+      </div>
+
+      <!-- MAPA (LADO DERECHO, OMITIENDO RESERVA) -->
+      <div class="map-card reveal">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2834.8213601728196!2d-97.11651582382103!3d44.89886497107021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8783be313a07ed51%3A0x88f25372338ff0b1!2s16%20W%20Kemp%20Ave%2C%20Watertown%2C%20SD%2057201!5e0!3m2!1sen!2sus!4v1700000000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="100%" 
+          style="border:0; min-height: 380px;" 
+          allowfullscreen="" 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer-bottom" id="contact">
+    <div class="container footer-inner">
+      <div>
+        <h3 style="font-family: var(--font-heading); color: var(--text-dark); margin-bottom: 6px;">The Local</h3>
+        <p>16 West Kemp Avenue, Watertown, SD 57201</p>
+        <p>Email: watertownlocal@gmail.com | Tel: 605-878-3311</p>
+      </div>
+      
+      <div style="display: flex; flex-direction: column; align-items: flex-end; gap: 12px;">
+        <div class="footer-socials" style="display: flex; gap: 16px;">
+          <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" title="Facebook" style="color: var(--text-dark); transition: color 0.2s ease;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M22 12c0-5.52-4.48-10-10-10S2 6.48 2 12c0 4.84 3.44 8.87 8 9.8V15H7.5v-3H10V9.69c0-2.47 1.47-3.83 3.72-3.83 1.08 0 2.21.19 2.21.19v2.43h-1.24c-1.23 0-1.61.76-1.61 1.54V12h2.74l-.44 3H13.1v6.8c4.56-.93 8-4.96 8-9.8z"/></svg>
+          </a>
+          <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" title="Instagram" style="color: var(--text-dark); transition: color 0.2s ease;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="mailto:watertownlocal@gmail.com" title="Email" style="color: var(--text-dark); transition: color 0.2s ease;">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="5" width="18" height="14" rx="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3.5 6.5l8.5 7 8.5-7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+        </div>
+        <p>© 2026 The Local. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
