@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Full Menu | Pagoda Restaurant</title>
+<meta name="description" content="Explore the full menu of Pagoda Restaurant in North Pole, Alaska. Appetizers, soups, seafood, steaks, duck and Chinese-American specialties available for takeout or DoorDash delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Work+Sans:wght@400;500;600;700&family=Space+Mono:wght@400;700&family=Playfair+Display:ital,wght@0,600;0,700;1,600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="menu-page">
+
+<div class="grain" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- HEADER -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+    <div class="header-left-space"></div>
+
+    <button class="hutong-menu-btn" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <div class="hamburger-lines">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </button>
+
+    <div class="header-right-group" id="mainNav">
+      <nav class="hutong-nav-links">
+        <a href="index.html#about">About Us</a>
+        <a href="menu.html" class="active">Menu</a>
+        <a href="index.html#visit">Location</a>
+      </nav>
+      <a href="#" class="hutong-top-btn" id="headerDoorDash" target="_blank" rel="noopener">
+        Order Now
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- MENU HERO -->
+<section class="menu-hero">
+  <div class="menu-hero-inner">
+    <span class="eyebrow eyebrow-light">DoorDash & Takeout Menu</span>
+    <h1>The Full <span class="accent">Menu</span></h1>
+    <p>Scratch sauces, hand-cut meats and vegetables, seared over open wok fire. Everything prepared fresh in North Pole, Alaska.</p>
+  </div>
+</section>
+
+<!-- CATEGORY JUMP BAR (Sticky) -->
+<nav class="full-menu-jump" id="fullMenuJump" aria-label="Jump to category">
+  <!-- Populated by JS -->
+</nav>
+
+<!-- MENU BODY -->
+<main class="full-menu-page-body">
+  <div class="full-menu-inner">
+    <div id="fullMenuBody">
+      <!-- Populated by JS -->
+    </div>
+    
+    <div class="full-menu-footer">
+      <div class="cta-card">
+        <h3>Ready to Order?</h3>
+        <p>Get your favorite dishes delivered piping hot straight to your doorstep.</p>
+        <a href="#" class="btn-solid btn-lg" id="fullMenuDoorDash" target="_blank" rel="noopener">Order on DoorDash</a>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="f-brand">
+      <div class="logo">Pagoda</div>
+      <p>Chinese-American kitchen on Santa Claus Lane &mdash; North Pole, Alaska.</p>
+    </div>
+    <div class="f-col">
+      <h4>Explore</h4>
+      <a href="index.html#about">About Us</a>
+      <a href="menu.html">Menu</a>
+      <a href="index.html#visit">Location</a>
+    </div>
+    <div class="f-col">
+      <h4>Visit</h4>
+      <p id="footerAddress">431 North Santa Claus Lane<br>North Pole, AK 99705</p>
+      <p><a href="#" id="footerPhone">(907) 488-3338</a></p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="year"></span> Pagoda Restaurant. All rights reserved.</span>
+    <span>North Pole, Alaska</span>
+  </div>
+</footer>
+
+<script src="script.js" defer></script>
+</body>
+</html>
